@@ -11,10 +11,6 @@ def load_and_validate_data(data_path: str) -> pd.DataFrame:
         raise ValueError("CSV must contain 'text' and 'label' columns")
     return df
 
-if __name__ == "__main__":
-    df = load_and_validate_data("sentiments.csv")
-    print(df.head())
-
 def split_data(
     df: pd.DataFrame,
 ) -> tuple[pd.Series, pd.Series, pd.Series, pd.Series]:
