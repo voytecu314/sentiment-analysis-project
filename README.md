@@ -1,4 +1,4 @@
-# Sentiment Analysis Pipeline Project
+# Sentiment Analysis Pipeline
 
 ## Setup
 
