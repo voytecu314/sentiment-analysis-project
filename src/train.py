@@ -67,6 +67,14 @@ def main(data_path: str, model_path: str) -> None:
 
     save_model(clf, model_path)
 
+def print_data_summary(df):
+    """Prints a summary of the loaded dataset."""
+    print("-" * 30)
+    print(f"Dataset loaded with {len(df)} rows.")
+    print(f"Columns: {', '.join(df.columns)}")
+    print(f"Missing values check:\n{df.isnull().sum()}")
+    print("-" * 30)
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data", default="data/sentiments.csv")
