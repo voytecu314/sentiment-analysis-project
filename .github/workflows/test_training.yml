@@ -33,4 +33,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run training script
-        run: python src/train.py --data data/train.csv --out models/sentiment.joblib
+        run: python src/train.py --data data/sentiments.csv --out models/sentiment.joblib
