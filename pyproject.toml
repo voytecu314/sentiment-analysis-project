@@ -1,3 +1,10 @@
+[tool.ruff]
+line-length = 88
+
 [tool.ruff.lint]
 # Enable specific rule sets by their code
 select = ["E", "F", "I", "T20"]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
