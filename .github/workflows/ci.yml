@@ -1,4 +1,4 @@
-name: Test training process
+name: Test CI workflow
 
 on:
   push:
@@ -34,3 +34,6 @@ jobs:
 
       - name: Run training script
         run: python src/train.py --data data/sentiments.csv --out models/sentiment.joblib
+      
+      - name: Run tests
+        run: pytest -v test/
