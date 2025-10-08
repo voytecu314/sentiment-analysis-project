@@ -5,12 +5,14 @@ on:
     branches: [ main ]
     paths:
       - "src/**"
+      - "test/**"
       - "data/**"
       - "requirements.txt"
       - ".github/workflows/**"
   pull_request:
     paths:
       - "src/**"
+      - "test/**"
       - "data/**"
       - "requirements.txt"
       - ".github/workflows/**"
