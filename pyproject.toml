@@ -1,0 +1,3 @@
+[tool.ruff.lint]
+# Enable specific rule sets by their code
+select = ["E", "F", "I", "T20"]
