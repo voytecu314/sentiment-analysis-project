@@ -15,7 +15,7 @@ on:
       - "requirements.txt"
       - ".github/workflows/**"
 jobs:
-  run-train-predicz:
+  run-train-predict:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
