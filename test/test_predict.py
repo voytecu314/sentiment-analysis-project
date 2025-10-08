@@ -16,6 +16,7 @@ from src.predict import load_model, predict_texts
 #     assert prediction == 0
 # ruff: enable: ERA001
 
+
 @pytest.mark.parametrize(
     "sentence,expected",
     [
