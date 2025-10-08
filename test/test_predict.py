@@ -1,4 +1,5 @@
 import pytest
+
 from src.predict import load_model, predict_texts
 
 # def test_predict_positive_sentence():
