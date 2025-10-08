@@ -42,7 +42,7 @@ jobs:
       
       - name: Run tests
         run: pytest -v test/
-  run-ruff-tests:
+  lint-and-format:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
