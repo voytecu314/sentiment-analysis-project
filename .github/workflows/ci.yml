@@ -15,7 +15,7 @@ on:
       - "requirements.txt"
       - ".github/workflows/**"
 jobs:
-  run-formatter:
+  run-ci:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
