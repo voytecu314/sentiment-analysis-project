@@ -34,6 +34,10 @@ jobs:
 
       - name: Run training script
         run: python src/train.py --data data/sentiments.csv --out models/sentiment.joblib
+
+      - name: Run prediction script
+        run: python src/predict.py "That was the best" "I'm happy" "Whoa! That's terrible"
       
       - name: Run tests
         run: pytest -v test/
+  
