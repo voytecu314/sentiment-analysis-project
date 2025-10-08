@@ -2,6 +2,7 @@ import pytest
 
 from src.predict import load_model, predict_texts
 
+# ruff: noqa: ERA001
 # def test_predict_positive_sentence():
 #     sentence = "I love this movie, it was fantastic and inspiring!"
 #     model = load_model("models/sentiment.joblib")
@@ -13,7 +14,7 @@ from src.predict import load_model, predict_texts
 #     model = load_model("models/sentiment.joblib")
 #     prediction = predict_texts(model, [sentence])[0][0]
 #     assert prediction == 0
-
+# ruff: enable: ERA001
 
 @pytest.mark.parametrize(
     "sentence,expected",
