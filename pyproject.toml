@@ -8,3 +8,7 @@ select = ["E", "F", "I", "ERA001"]
 [tool.ruff.format]
 quote-style = "double"
 docstring-code-format = true
+
+[tool.mypy]
+#skip errors about missing type information for any external libraries
+ignore_missing_imports = true
