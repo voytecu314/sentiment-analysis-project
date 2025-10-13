@@ -86,7 +86,7 @@ jobs:
 
       - name: Run mypy type checker
         run: mypy src/ test/
-    build-and-deploy-docker-image:
+  build-and-deploy-docker-image:
     runs-on: ubuntu-latest
     needs: [run-train-predict, lint-and-format, type-check]
     steps:
